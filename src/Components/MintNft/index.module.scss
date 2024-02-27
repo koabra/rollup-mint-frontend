@@ -1,0 +1,104 @@
+.mintSectionMainContainer {
+  background: #111318;
+  padding-top: 89px;
+}
+
+.mintContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 250px;
+}
+.mintNftContentAndImage {
+  display: flex;
+  flex-direction: column;
+}
+.mintYourNft {
+  padding-bottom: 31px;
+  color: var(--White, #fff);
+  font-family: "Sora";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.stepIndicator {
+  margin-left: 55px;
+  margin-right: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--Gray-13, #637592);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Gray-13, #637592);
+  text-align: center;
+  font-family: "Sora";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.circle.active {
+  background-color: var(--Primary-5, #3d6eff); /* Fill circle with blue color */
+  color: #fff; /* Change number color to white */
+}
+
+.line {
+  width: 1px;
+  height: 65px;
+  background-color: #637592;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 42px;
+  margin-top: 65px;
+}
+
+.mintButton,
+.preBurnButton {
+  width: 242px;
+  padding: 16px 0px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.chainButtonsContainer {
+  border-radius: 12px;
+  background: #212738;
+  padding: 12px 10px 11px 10px;
+}
+.button {
+  background: #212738;
+  border: none;
+  cursor: pointer;
+}
