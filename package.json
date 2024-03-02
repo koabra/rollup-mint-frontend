@@ -1,45 +1,34 @@
 {
-  "name": "hackathon-app",
-  "version": "0.1.0",
+  "name": "nft-rollup-wagmi",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "biome check .",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@fontsource/sora": "^5.0.16",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "json-server": "^0.17.3",
+    "@tanstack/react-query": "^5.0.5",
+    "@web3modal/wagmi": "^4.0.10",
+    "ethers": "^6.11.1",
+    "import": "^0.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "sass": "^1.71.1",
-    "styled-components": "^6.0.3",
-    "typeface-metrophobic": "^1.1.13",
-    "typeface-roboto": "^1.1.13",
     "typeface-sora": "^1.1.13",
-    "web-vitals": "^2.1.4"
+    "viem": "^2.7.15",
+    "wagmi": "^2.5.7"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@biomejs/biome": "^1.1.2",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.1.0",
+    "@wagmi/cli": "latest",
+    "buffer": "^6.0.3",
+    "sass": "^1.71.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
   }
 }

@@ -1,0 +1,167 @@
+.getRootBg {
+  background-color: var(--Black, #000000);
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Sora";
+  font-size: 28px;
+}
+.rootErrorMessage {
+  background-color: #ffe6e6; /* Light red background */
+  color: #b30000; /* Dark red text color */
+  padding: 10px; /* Padding around the message */
+  border: 1px solid #ffcccc; /* Red border */
+  border-radius: 5px; /* Rounded corners */
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  margin-bottom: 20px; /* Spacing at the bottom */
+}
+.toaster {
+  display: none;
+  // position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  transition: opacity 0.5s ease-in-out; // Fade animation
+
+  position: relative;
+  // display: flex;
+  // align-items: center;
+  // padding-right: 30px; // Adjust as needed for icon width
+
+  &.hidden {
+    opacity: 0;
+  }
+
+  &.clock-animation {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 20px; // Width of the clock icon
+      height: 100%;
+      background: linear-gradient(to top, #4caf50 50%, transparent 50%);
+      animation: fillClock 5s linear forwards;
+    }
+  }
+}
+
+@keyframes fillClock {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.clearRootErrorButton {
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  padding-right: 50px;
+  cursor: pointer;
+}
+.getTokenContainer {
+  padding-top: 106px;
+}
+.getTokenContent {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Sora";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.ethAddress {
+  padding-bottom: 4px;
+  padding-left: 16px;
+  color: var(--White, #fff);
+  text-align: left;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Sora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.walletAddressDetails {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  margin-bottom: 94px;
+}
+.walletAddressKeyAndValue {
+  display: flex;
+  flex-direction: column;
+}
+.walletAddressContainer {
+  border-radius: 12px;
+  width: 462px;
+  background: var(--Gray-22, #191d24);
+  padding: 20px 20px 20px 16px;
+  color: var(--Gray-13, #637592);
+  font-family: "Sora";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  margin-right: 36px;
+}
+.dripButton {
+  display: flex;
+  margin-top: 27px;
+  justify-content: center;
+  border-radius: 12px;
+  background: #3d6eff;
+  padding: 25px 34px 16px 50px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+.dripButtonContent {
+  color: var(--White, #fff);
+  font-family: "Sora";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
+}
+.dripButton:hover {
+  box-shadow: 0 0 10px 0 #3d6eff;
+}
+.walletAddressInput {
+  font-family: "sora";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  width: 100%;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+input:focus {
+  outline: none;
+}
+.input::placeholder {
+  font-family: "Metrophobic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112.4%;
+  color: rgba(153, 178, 198, 1);
+}

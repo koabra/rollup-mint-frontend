@@ -1,0 +1,33 @@
+/* errorToast.module.css */
+
+/* Error toast container */
+.errorToast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff5252; /* Red color for error */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Error toast message */
+.errorToastMessage {
+  margin-bottom: 5px;
+}
+
+/* Close button */
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.closeButton:hover {
+  color: #ffebee; /* Lighten the close button color on hover */
+}

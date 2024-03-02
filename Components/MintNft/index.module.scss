@@ -1,0 +1,174 @@
+.mintSectionMainContainer {
+  background: #111318;
+  padding-top: 89px;
+}
+
+.mintContainer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 250px;
+}
+.mintNftContentAndImage {
+  display: flex;
+  flex-direction: column;
+}
+.mintYourNft {
+  padding-bottom: 31px;
+  color: var(--White, #fff);
+  font-family: "Sora";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.stepIndicator {
+  margin-left: 55px;
+  margin-right: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--Gray-13, #637592);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Gray-13, #637592);
+  text-align: center;
+  font-family: "Sora";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.circle.active {
+  background-color: var(--Primary-5, #3d6eff); /* Fill circle with blue color */
+  color: #fff; /* Change number color to white */
+}
+
+.line {
+  width: 1px;
+  height: 65px;
+  background-color: #637592;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: flex-end;
+  gap: 42px;
+  margin-top: 65px;
+}
+
+.mintButton,
+.preBurnButton {
+  width: 242px;
+  padding: 16px 0px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.chainButtonsContainer {
+  border-radius: 12px;
+  background: #212738;
+  padding: 12px 10px 11px 10px;
+}
+.button {
+  background: #212738;
+  border: none;
+  cursor: pointer;
+}
+.chainButton {
+  background: #212738;
+  border: none;
+  cursor: pointer;
+}
+
+/* index.module.css */
+
+.mintButton button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Spinner styles */
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Toaster styles */
+.toaster {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.progress {
+  background-color: #555;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+}
+
+.progressBar {
+  background-color: #3d6eff;
+  height: 100%;
+  width: 0;
+  border-radius: 2px;
+  animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
